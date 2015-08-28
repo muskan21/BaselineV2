@@ -16,4 +16,10 @@ public class Baseline {
         }
         return name;
     }
+
+    public double extractPrice(String input) {
+        String[] details = input.split(" ");
+        return Double.parseDouble(details[details.length - 1]);
+    }
+
 }
