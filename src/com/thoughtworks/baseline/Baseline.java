@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 public class Baseline {
 
-    public String extractName(String input) {
-        String[] details = input.split(" ");
+    public String extractName(String[] details) {
         String name = "";
         int i = 1;
         int len = details.length;
@@ -17,8 +16,7 @@ public class Baseline {
         return name;
     }
 
-    public double extractPrice(String input) {
-        String[] details = input.split(" ");
+    public double extractPrice(String[] details) {
         return Double.parseDouble(details[details.length - 1]);
     }
 
@@ -28,5 +26,9 @@ public class Baseline {
 
     public boolean isExemptedItem(String input) {
         return input.contains("book") || input.contains("chocolate") || input.contains("pill");
+    }
+
+    public String[] parseStringToWords(String input) {
+        return input.split(" ");
     }
 }
