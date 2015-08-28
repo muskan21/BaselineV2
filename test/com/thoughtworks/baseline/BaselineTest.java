@@ -42,4 +42,10 @@ public class BaselineTest {
         assertTrue(baseline.isExemptedItem("1 box of chocolates at 44.85"));
     }
 
+    @Test
+    public void shouldBeTrueForExemptedItemMedical() {
+        Baseline baseline = new Baseline();
+
+        assertTrue(baseline.isExemptedItem("1 imported box of headache pills at 44.85"));
+    }
 }
