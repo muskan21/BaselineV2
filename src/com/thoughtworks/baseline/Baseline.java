@@ -25,4 +25,8 @@ public class Baseline {
     public boolean isImportedItem(String input) {
         return input.contains("imported");
     }
+
+    public boolean isExemptedItem(String input) {
+        return input.contains("book");
+    }
 }

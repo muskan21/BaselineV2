@@ -28,4 +28,11 @@ public class BaselineTest {
         assertTrue(baseline.isImportedItem("1 imported box of chocolates at 22.80"));
     }
 
+    @Test
+    public void shouldBeTrueForExemptedItemBook() {
+        Baseline baseline = new Baseline();
+
+        assertTrue(baseline.isExemptedItem("1 book at 44.85"));
+    }
+
 }
