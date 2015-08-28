@@ -22,4 +22,7 @@ public class Baseline {
         return Double.parseDouble(details[details.length - 1]);
     }
 
+    public boolean isImportedItem(String input) {
+        return input.contains("imported");
+    }
 }

@@ -21,4 +21,11 @@ public class BaselineTest {
         assertEquals(12.49, baseline.extractPrice("1 box of chocolates at 12.49"), 0.001);
     }
 
+    @Test
+    public void shouldBeTrueForImportedItems() {
+        Baseline baseline = new Baseline();
+
+        assertTrue(baseline.isImportedItem("1 imported box of chocolates at 22.80"));
+    }
+
 }
