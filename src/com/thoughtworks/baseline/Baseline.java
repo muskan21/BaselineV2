@@ -27,6 +27,6 @@ public class Baseline {
     }
 
     public boolean isExemptedItem(String input) {
-        return input.contains("book");
+        return input.contains("book") || input.contains("chocolate");
     }
 }
