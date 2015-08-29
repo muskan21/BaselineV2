@@ -1,4 +1,4 @@
-<project name="BaselineV2" default="run" basedir=".">
+<project name="BaselineV2" default="runTest" basedir=".">
 
     <property name="project.name" value="BaselineV2"></property>
     <property name="package.name" value="com.thoughtworks.baseline"/>
